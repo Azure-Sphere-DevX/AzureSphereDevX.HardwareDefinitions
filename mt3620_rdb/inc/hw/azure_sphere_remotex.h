@@ -64,16 +64,16 @@
 #define BUTTON_B MT3620_RDB_BUTTON_B
 
 // I2C_ISU2
-#define I2cMaster MT3620_RDB_HEADER4_ISU2_I2C
+#define I2C_MASTER MT3620_RDB_HEADER4_ISU2_I2C
 
 // SPI_ISU1
-#define SpiMaster MT3620_RDB_HEADER4_ISU1_SPI
+#define SPI_MASTER MT3620_RDB_HEADER4_ISU1_SPI
 
 // UART_ISU0
-#define Uart MT3620_RDB_HEADER2_ISU0_UART
+#define UART MT3620_RDB_HEADER2_ISU0_UART
 
 // PWM CONTROLLER 0: channel 0 is exposed on SOCKET1 pin PWM, channel 1 is exposed on: SOCKET2 pin PWM and UART/BLE Connector pin 9, channel 2 is exposed on: SOCKET1 pin INT, SOCKET2 pin INT and UART/BLE Connector pin 7. Pins for this controller are shared with AVNET_MT3620_SK_GPIO0, AVNET_MT3620_SK_GPIO1 and AVNET_MT3620_SK_GPIO2. If this PWM controller is requested, none of these GPIOs can be used.
-#define Pwm MT3620_RDB_PWM_CONTROLLER0
+#define PWM MT3620_RDB_PWM_CONTROLLER0
 
-#define Adc MT3620_RDB_ADC_CONTROLLER0
+#define ADC MT3620_RDB_ADC_CONTROLLER0
 

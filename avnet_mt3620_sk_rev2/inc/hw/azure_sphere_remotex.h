@@ -31,16 +31,16 @@
 #define BUTTON_B AVNET_MT3620_SK_USER_BUTTON_B
 
 // I2C_ISU2
-#define I2cMaster AVNET_MT3620_SK_ISU2_I2C
+#define I2C_MASTER AVNET_MT3620_SK_ISU2_I2C
 
 // SPI_ISU0
-#define SpiMaster AVNET_MT3620_SK_ISU0_SPI
+#define SPI_MASTER AVNET_MT3620_SK_ISU0_SPI
 
 // UART_ISU1
-#define Uart AVNET_MT3620_SK_ISU1_UART
+#define UART AVNET_MT3620_SK_ISU1_UART
 
 // PWM CONTROLLER 0: channel 0 is exposed on CLICK1 (PWM), channel 1 is exposed on: CLICK2 (PWM) and PMOD (Pin 9), channel 2 is exposed on: CLICK1 (INT), CLICK2 (INT) and PMOD (Pin 7).  Pins for this controller are shared with AVNET_MT3620_SK_GPIO0, AVNET_MT3620_SK_GPIO1 and AVNET_MT3620_SK_GPIO2. If this PWM controller is requested, none of these GPIOs can be used.
-#define Pwm AVNET_MT3620_SK_PWM_CONTROLLER0
+#define PWM AVNET_MT3620_SK_PWM_CONTROLLER0
 
-#define Adc AVNET_MT3620_SK_ADC_CONTROLLER0
+#define ADC AVNET_MT3620_SK_ADC_CONTROLLER0
 

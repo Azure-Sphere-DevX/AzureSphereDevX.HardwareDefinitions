@@ -78,31 +78,31 @@
             "Comment": "PIN_16"
         },
         {
-            "Name": "I2cMaster",
+            "Name": "I2C_MASTER",
             "Type": "I2cMaster",
             "Mapping": "AVNET_MT3620_SK_ISU2_I2C",
             "Comment": "I2C_ISU2"
         },
         {
-            "Name": "SpiMaster",
+            "Name": "SPI_MASTER",
             "Type": "SpiMaster",
             "Mapping": "AVNET_MT3620_SK_ISU1_SPI",
             "Comment": "SPI_ISU1"
         },
         {
-            "Name": "Uart",
+            "Name": "UART",
             "Type": "Uart",
             "Mapping": "AVNET_MT3620_SK_ISU0_UART",
             "Comment": "UART_ISU0"
         },
         {
-            "Name": "Pwm",
+            "Name": "PWM",
             "Type": "Pwm",
             "Mapping": "AVNET_MT3620_SK_PWM_CONTROLLER0",
             "Comment": "PWM CONTROLLER 0: channel 0 is exposed on SOCKET1 pin PWM, channel 1 is exposed on: SOCKET2 pin PWM and UART/BLE Connector pin 9, channel 2 is exposed on: SOCKET1 pin INT, SOCKET2 pin INT and UART/BLE Connector pin 7. Pins for this controller are shared with AVNET_MT3620_SK_GPIO0, AVNET_MT3620_SK_GPIO1 and AVNET_MT3620_SK_GPIO2. If this PWM controller is requested, none of these GPIOs can be used."
         },
         {
-            "Name": "Adc",
+            "Name": "ADC",
             "Type": "Adc",
             "Mapping": "AVNET_MT3620_SK_ADC_CONTROLLER0"
         }
