@@ -36,6 +36,12 @@
             "Comment": "LED1_GREEN"
         },
         {
+            "Name": "STATUS_LED",
+            "Type": "Gpio",
+            "Mapping": "MT3620_RDB_LED1_GREEN",
+            "Comment": "LED1_GREEN"
+        },
+        {
             "Name": "LED1_BLUE",
             "Type": "Gpio",
             "Mapping": "MT3620_RDB_LED1_BLUE",
@@ -96,30 +102,6 @@
             "Comment": "LED4_BLUE"
         },
         {
-            "Name": "STATUS_LED_RED",
-            "Type": "Gpio",
-            "Mapping": "MT3620_RDB_STATUS_LED_RED",
-            "Comment": "STATUS_LED_RED"
-        },
-        {
-            "Name": "STATUS_LED_GREEN",
-            "Type": "Gpio",
-            "Mapping": "MT3620_RDB_STATUS_LED_GREEN",
-            "Comment": "STATUS_LED_GREEN"
-        },
-        {
-            "Name": "STATUS_LED_BLUE",
-            "Type": "Gpio",
-            "Mapping": "MT3620_RDB_STATUS_LED_BLUE",
-            "Comment": "STATUS_LED_BLUE"
-        },
-        {
-            "Name": "NETWORKING_LED_RED",
-            "Type": "Gpio",
-            "Mapping": "MT3620_RDB_NETWORKING_LED_RED",
-            "Comment": "NETWORKING_LED_RED"
-        },
-        {
             "Name": "NETWORKING_LED_GREEN",
             "Type": "Gpio",
             "Mapping": "MT3620_RDB_NETWORKING_LED_GREEN",
@@ -130,6 +112,18 @@
             "Type": "Gpio",
             "Mapping": "MT3620_RDB_NETWORKING_LED_BLUE",
             "Comment": "NETWORKING_LED_BLUE"
+        },
+        {
+            "Name": "BUTTON_A",
+            "Type": "Gpio",
+            "Mapping": "MT3620_RDB_BUTTON_A",
+            "Comment": "BUTTON_A"
+        },
+        {
+            "Name": "BUTTON_B",
+            "Type": "Gpio",
+            "Mapping": "MT3620_RDB_BUTTON_B",
+            "Comment": "BUTTON_B"
         },
         {
             "Name": "I2cMaster",
@@ -154,6 +148,11 @@
             "Type": "Pwm",
             "Mapping": "MT3620_RDB_PWM_CONTROLLER0",
             "Comment": "PWM CONTROLLER 0: channel 0 is exposed on SOCKET1 pin PWM, channel 1 is exposed on: SOCKET2 pin PWM and UART/BLE Connector pin 9, channel 2 is exposed on: SOCKET1 pin INT, SOCKET2 pin INT and UART/BLE Connector pin 7. Pins for this controller are shared with AVNET_MT3620_SK_GPIO0, AVNET_MT3620_SK_GPIO1 and AVNET_MT3620_SK_GPIO2. If this PWM controller is requested, none of these GPIOs can be used."
+        },
+        {
+            "Name": "Adc",
+            "Type": "Adc",
+            "Mapping": "MT3620_RDB_ADC_CONTROLLER0"
         }
     ]
 }

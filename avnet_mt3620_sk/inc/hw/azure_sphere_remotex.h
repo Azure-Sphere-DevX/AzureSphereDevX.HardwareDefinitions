@@ -13,7 +13,7 @@
 #include "avnet_mt3620_sk.h"
 
 // STATUS_LED_YELLOW
-#define STATUS_LED_YELLOW AVNET_MT3620_SK_APP_STATUS_LED_YELLOW
+#define STATUS_LED AVNET_MT3620_SK_APP_STATUS_LED_YELLOW
 
 // WLAN_STATUS_LED_YELLOW
 #define WLAN_STATUS_LED_YELLOW AVNET_MT3620_SK_WLAN_STATUS_LED_YELLOW
@@ -39,12 +39,6 @@
 // PIN_16
 #define PIN_17 AVNET_MT3620_SK_GPIO17
 
-// PIN_42
-#define PIN_42 AVNET_MT3620_SK_GPIO42
-
-// PIN_43
-#define PIN_43 AVNET_MT3620_SK_GPIO43
-
 // I2C_ISU2
 #define I2cMaster AVNET_MT3620_SK_ISU2_I2C
 
@@ -56,4 +50,6 @@
 
 // PWM CONTROLLER 0: channel 0 is exposed on SOCKET1 pin PWM, channel 1 is exposed on: SOCKET2 pin PWM and UART/BLE Connector pin 9, channel 2 is exposed on: SOCKET1 pin INT, SOCKET2 pin INT and UART/BLE Connector pin 7. Pins for this controller are shared with AVNET_MT3620_SK_GPIO0, AVNET_MT3620_SK_GPIO1 and AVNET_MT3620_SK_GPIO2. If this PWM controller is requested, none of these GPIOs can be used.
 #define Pwm AVNET_MT3620_SK_PWM_CONTROLLER0
+
+#define Adc AVNET_MT3620_SK_ADC_CONTROLLER0
 

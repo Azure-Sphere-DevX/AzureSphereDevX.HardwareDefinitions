@@ -24,22 +24,16 @@
     ],
     "Peripherals": [
         {
-            "Name": "USER_LED",
+            "Name": "STATUS_LED",
             "Type": "Gpio",
             "Mapping": "SEEED_MT3620_MDB_USER_LED",
-            "Comment": "USER_LED"
+            "Comment": "STATUS_LED"
         },
         {
             "Name": "PIN3_GPIO6",
             "Type": "Gpio",
             "Mapping": "SEEED_MT3620_MDB_J1_PIN3_GPIO6",
             "Comment": "PIN3_GPIO6"
-        },
-        {
-            "Name": "PIN3_GPIO43",
-            "Type": "Gpio",
-            "Mapping": "SEEED_MT3620_MDB_J1_PIN3_GPIO43",
-            "Comment": "PIN3_GPIO43"
         },
         {
             "Name": "I2cMaster",
@@ -58,6 +52,12 @@
             "Type": "Pwm",
             "Mapping": "SEEED_MT3620_MDB_PWM_CONTROLLER2",
             "Comment": "PWM CONTROLLER 2 channel 0 is exposed on J1 pin 5, channel 1 is exposed on J1 pin 6, channel 2 is exposed on J1 pin 7, and channel 3 is exposed on J1 pin 8. Pins for this controller are shared with SEEED_MT3620_MDB_J1_PIN5_GPIO8/GPIO26, SEEED_MT3620_MDB_J1_PIN6_GPIO9/GPIO27, SEEED_MT3620_MDB_J1_PIN7_GPIO10/28, SEEED_MT3620_MDB_J1_PIN8_GPIO11/29. If this PWM Controller is requested, none of these GPIOs can be used."
+        },
+        {
+            "Name": "Adc",
+            "Type": "Adc",
+            "Mapping": "SEEED_MT3620_MDB_ADC_CONTROLLER0",
+            "Comment": "ADC CONTROLLER 0 channel 0 is exposed on pin 1, channel 1 is exposed on pin 2, and channel 2 is exposed on pin 3. Pins for this controller are shared with SEEED_MT3620_MDB_J1_PIN1_GPIO4/GPIO41, SEEED_MT3620_MDB_J1_PIN2_GPIO5/GPIO42, and SEEED_MT3620_MDB_J1_PIN3_GPIO6/GPIO43. If this ADC controller is requested, none of these GPIOs can be used."
         }
     ]
 }

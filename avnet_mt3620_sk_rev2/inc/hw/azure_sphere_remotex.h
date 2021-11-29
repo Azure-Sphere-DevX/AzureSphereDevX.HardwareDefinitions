@@ -13,7 +13,7 @@
 #include "avnet_mt3620_sk_rev2.h"
 
 // STATUS_LED_YELLOW
-#define STATUS_LED_YELLOW AVNET_MT3620_SK_APP_STATUS_LED_YELLOW
+#define STATUS_LED AVNET_MT3620_SK_APP_STATUS_LED_YELLOW
 
 // USER_LED_RED
 #define USER_LED_RED AVNET_MT3620_SK_USER_LED_RED
@@ -30,12 +30,6 @@
 // Button B
 #define BUTTON_B AVNET_MT3620_SK_USER_BUTTON_B
 
-// PIN_42
-#define PIN_42 AVNET_MT3620_SK_GPIO42
-
-// PIN_43
-#define PIN_43 AVNET_MT3620_SK_GPIO43
-
 // I2C_ISU2
 #define I2cMaster AVNET_MT3620_SK_ISU2_I2C
 
@@ -46,5 +40,7 @@
 #define Uart AVNET_MT3620_SK_ISU1_UART
 
 // PWM CONTROLLER 0: channel 0 is exposed on CLICK1 (PWM), channel 1 is exposed on: CLICK2 (PWM) and PMOD (Pin 9), channel 2 is exposed on: CLICK1 (INT), CLICK2 (INT) and PMOD (Pin 7).  Pins for this controller are shared with AVNET_MT3620_SK_GPIO0, AVNET_MT3620_SK_GPIO1 and AVNET_MT3620_SK_GPIO2. If this PWM controller is requested, none of these GPIOs can be used.
-#define PWM_CONTROLLER0 AVNET_MT3620_SK_PWM_CONTROLLER0
+#define Pwm AVNET_MT3620_SK_PWM_CONTROLLER0
+
+#define Adc AVNET_MT3620_SK_ADC_CONTROLLER0
 
