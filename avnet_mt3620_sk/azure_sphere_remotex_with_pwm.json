@@ -66,21 +66,6 @@
             "Comment": "Button B"
         },
         {
-            "Name": "PIN_0",
-            "Type": "Gpio",
-            "Mapping": "AVNET_MT3620_SK_GPIO0"
-        },
-        {
-            "Name": "PIN_1",
-            "Type": "Gpio",
-            "Mapping": "AVNET_MT3620_SK_GPIO1"
-        },
-        {
-            "Name": "PIN_2",
-            "Type": "Gpio",
-            "Mapping": "AVNET_MT3620_SK_GPIO2"
-        },
-        {
             "Name": "PIN_16",
             "Type": "Gpio",
             "Mapping": "AVNET_MT3620_SK_GPIO16",
@@ -109,6 +94,12 @@
             "Type": "Uart",
             "Mapping": "AVNET_MT3620_SK_ISU0_UART",
             "Comment": "UART_ISU0"
+        },
+        {
+            "Name": "PWM",
+            "Type": "Pwm",
+            "Mapping": "AVNET_MT3620_SK_PWM_CONTROLLER0",
+            "Comment": "PWM CONTROLLER 0: channel 0 is exposed on SOCKET1 pin PWM, channel 1 is exposed on: SOCKET2 pin PWM and UART/BLE Connector pin 9, channel 2 is exposed on: SOCKET1 pin INT, SOCKET2 pin INT and UART/BLE Connector pin 7. Pins for this controller are shared with AVNET_MT3620_SK_GPIO0, AVNET_MT3620_SK_GPIO1 and AVNET_MT3620_SK_GPIO2. If this PWM controller is requested, none of these GPIOs can be used."
         },
         {
             "Name": "ADC",
