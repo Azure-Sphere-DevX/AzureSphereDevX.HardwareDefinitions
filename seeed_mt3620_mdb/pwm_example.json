@@ -17,12 +17,12 @@
       "// to enable apps to work across multiple hardware variants."
     ]
   },
-  "Imports": [ { "Path": "mt3620_rdb.json" } ],
+  "Imports": [ { "Path": "seeed_mt3620_mdb.json" } ],
   "Peripherals": [
     {
       "Name": "PWM_LED_CONTROLLER",
       "Type": "Pwm",
-      "Mapping": "MT3620_RDB_PWM_CONTROLLER1",
+      "Mapping": "SEEED_MT3620_MDB_PWM_CONTROLLER1",
       "Comment": "PWM app pin"
     }
   ]
