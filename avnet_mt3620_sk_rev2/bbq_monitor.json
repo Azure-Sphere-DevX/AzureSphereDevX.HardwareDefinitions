@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure-Sphere-Tools/hardware-definition-schema/master/hardware-definition-schema.json",
+  "Metadata": {
+    "Type": "Azure Sphere Hardware Definition",
+    "Version": 1
+  },
+  "Description": {
+    "Name": "Hardware abstraction for the Avnet BBQ Monitor Sample",
+    "MainCoreHeaderFileTopContent": [
+      "/* Copyright (c) Microsoft Corporation. All rights reserved.",
+      "   Licensed under the MIT License. */",
+      "",
+      "// This file defines the mapping from the Avnet Azure Sphere Starter Kit Rev-1 board to the",
+      "// hardware devices required for the Avnet BBQ Monitor example",
+      "// https://docs.microsoft.com/en-us/azure-sphere/app-development/manage-hardware-dependencies",
+      "// to enable apps to work across multiple hardware variants."
+    ]
+  },
+  "Imports": [
+    {
+      "Path": "avnet_mt3620_sk_rev2.json"
+    }
+  ],
+  "Peripherals": [
+    {
+      "Name": "PWM_CLICK_CONTROLLER",
+      "Type": "Pwm",
+      "Mapping": "AVNET_MT3620_SK_PWM_CONTROLLER0",
+      "Comment": "Install the Buzz CLICK into CLICK socket #2 (PWM)"
+    },
+    {
+      "Name": "RGBLED_RED",
+      "Type": "Gpio",
+      "Mapping": "AVNET_MT3620_SK_USER_LED_RED",
+      "Comment": "Avnet Starter Kit LED RED Channel."
+    },
+    {
+      "Name": "RGBLED_GREEN",
+      "Type": "Gpio",
+      "Mapping": "AVNET_MT3620_SK_USER_LED_GREEN",
+      "Comment": "Avnet Starter Kit LED  GREEN Channel."
+    },
+    {
+      "Name": "RGBLED_BLUE",
+      "Type": "Gpio",
+      "Mapping": "AVNET_MT3620_SK_USER_LED_BLUE",
+      "Comment": "Avnet Starter Kit LED  BLUE Channel."
+    },
+    {
+      "Name": "UPDATE_PENDING_LED",
+      "Type": "Gpio",
+      "Mapping": "AVNET_MT3620_SK_APP_STATUS_LED_YELLOW",
+      "Comment": "Avnet Starter Kit App LED"
+    },
+    {
+      "Name": "OLED_I2C",
+      "Type": "I2cMaster",
+      "Mapping": "AVNET_MT3620_SK_ISU2_I2C",
+      "Comment": "SSD 1306 OLED installed on the Avnet Starter Kit."
+    },
+    {
+      "Name": "BUTTON_1",
+      "Type": "Gpio",
+      "Mapping": "AVNET_MT3620_SK_USER_BUTTON_A",
+      "Comment": "Avnet Starter Kit User Button A."
+    },
+    {
+      "Name": "BUTTON_2",
+      "Type": "Gpio",
+      "Mapping": "AVNET_MT3620_SK_USER_BUTTON_B",
+      "Comment": "Avnet Starter Kit User Button B."
+    }
+  ]
+}
